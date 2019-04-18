@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+.row {
+  display: flex;
+  flex: 1;
+}
+.row .cell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+.row .cell iframe {
+  flex: 1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: opacity 300ms linear;
+  display: flex;
+  align-items: center;
+}
+.invisible {
+  display: none;
+}
+.ui {
+  color: #fff;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  padding: 24px;
+}
+.center {
+  text-align: center;
+}
+.margin-right {
+  margin-right: 12px;
+}
+.margin-x {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+#current-time {
+  text-align: center;
+}
+.ui-row {
+  display: flex;
+}
+.ui-row .flex {
+  flex: 1;
+}
